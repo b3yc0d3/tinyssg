@@ -1,0 +1,23 @@
+[package]
+name = "tinyssg"
+version = "0.1.0"
+edition = "2021"
+authors = ["b3yc0d3 <b3yc0d3@gmail.com>"]
+license = "MIT or ISC"
+publish = false
+
+# Targets
+
+[[bin]]
+name = "tssg"
+path = "src/main.rs"
+
+# Build profiles
+
+[profile.release]
+opt-level = "s"
+overflow-checks = true
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
